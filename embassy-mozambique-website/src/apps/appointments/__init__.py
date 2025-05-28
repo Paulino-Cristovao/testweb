@@ -1,0 +1,1 @@
+# This file marks the appointments directory as a Python package.

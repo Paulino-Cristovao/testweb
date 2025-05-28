@@ -1,0 +1,32 @@
+# Translation file for French language
+
+{
+    "welcome": "Bienvenue sur le site de l'Ambassade du Mozambique en France",
+    "about_us": "À propos de nous",
+    "services": "Services",
+    "consular_services": "Services consulaires",
+    "news_events": "Actualités et événements",
+    "resources": "Ressources",
+    "contact": "Contact",
+    "appointments": "Rendez-vous",
+    "emergency_services": "Services d'urgence",
+    "visa_services": "Services de visa",
+    "passport_services": "Services de passeport",
+    "consular_assistance": "Assistance consulaire",
+    "trade_investment": "Commerce et investissement",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "book_appointment": "Réserver un rendez-vous",
+    "document_upload": "Télécharger un document",
+    "faq": "Questions fréquentes",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "reschedule": "Reprogrammer",
+    "confirmation": "Confirmation",
+    "reminder": "Rappel",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement...",
+    "search": "Recherche",
+    "language": "Langue"
+}

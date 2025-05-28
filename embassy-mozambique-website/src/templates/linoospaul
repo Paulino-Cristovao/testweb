@@ -1,0 +1,77 @@
+inos/python_project_2025/testweb/embassy-mozambique-website/src/templates/cms/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8">
+        <!-- Hero Section -->
+        <div class="jumbotron bg-primary text-white p-5 rounded mb-4">
+            <h1 class="display-4">Welcome to the Embassy of Mozambique</h1>
+            <p class="lead">Your gateway to consular services in France</p>
+            <a class="btn btn-light btn-lg" href="{% url 'services:list' %}" role="button">Explore Services</a>
+        </div>
+
+        <!-- Featured News -->
+        {% if featured_news %}
+        <div class="mb-4">
+            <h2>Featured News</h2>
+            <div class="row">
+                {% for article in featured_news %}
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        {% if article.featured_image %}
+                        <img src="{{ article.featured_image.url }}" class="card-img-top" alt="{{ article.title }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title">{{ article.title }}</h5>
+                            <p class="card-text">{{ article.excerpt }}</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="col-lg-4">
+        <!-- Quick Links -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4>Quick Links</h4>
+            </div>
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <a href="{% url 'appointments:booking' %}" class="list-group-item list-group-item-action">
+                        Book Appointment
+                    </a>
+                    <a href="{% url 'services:list' %}" class="list-group-item list-group-item-action">
+                        Embassy Services
+                    </a>
+                    <a href="{% url 'documents:templates' %}" class="list-group-item list-group-item-action">
+                        Download Forms
+                    </a>
+                    <a href="{% url 'chatbot:chatbot' %}" class="list-group-item list-group-item-action">
+                        Get Help
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="card bg-danger text-white">
+            <div class="card-header">
+                <h4>Emergency Contact</h4>
+            </div>
+            <div class="card-body">
+                <p>For urgent consular assistance:</p>
+                <p><strong>Phone:</strong> +33 (0) 1 XX XX XX XX</p>
+                <p><strong>Email:</strong> emergency@mozambique-embassy.fr</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

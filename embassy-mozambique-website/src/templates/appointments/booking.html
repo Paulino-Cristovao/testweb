@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking - Embassy of Mozambique</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+    {% include 'base.html' %}
+
+    <div class="container mt-5">
+        <h1>Book an Appointment</h1>
+        <form method="POST" action="{% url 'appointments:book' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="service">Select Service</label>
+                <select class="form-control" id="service" name="service" required>
+                    <option value="">Choose...</option>
+                    <option value="visa">Visa Services</option>
+                    <option value="passport">Passport Services</option>
+                    <option value="consular">Consular Assistance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Select Date</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Time</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+        </form>
+    </div>
+
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

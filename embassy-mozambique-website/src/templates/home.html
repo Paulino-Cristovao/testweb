@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embassy of Mozambique - Home</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+    {% include 'base.html' %}
+    
+    <div class="container mt-5">
+        <h1>Welcome to the Embassy of Mozambique in France</h1>
+        <p>Your primary digital gateway for consular services, information, and assistance.</p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Consular Services</h2>
+                <p>Access essential services such as visa applications, passport renewals, and more.</p>
+                <a href="{% url 'appointments:booking' %}" class="btn btn-primary">Book an Appointment</a>
+            </div>
+            <div class="col-md-4">
+                <h2>News & Events</h2>
+                <p>Stay updated with the latest announcements and cultural events.</p>
+                <a href="{% url 'news_events' %}" class="btn btn-primary">View News</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Resources</h2>
+                <p>Find forms, documents, and guides to assist you with your needs.</p>
+                <a href="{% url 'resources' %}" class="btn btn-primary">Explore Resources</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consular Services - Embassy of Mozambique</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+</head>
+<body>
+    {% include 'base.html' %}
+
+    <div class="container mt-5">
+        <h1>Consular Services</h1>
+        <p>Welcome to the Embassy of Mozambique in France. Here you can find information about the various consular services we offer.</p>
+
+        <h2>Our Services</h2>
+        <ul>
+            <li><a href="{% url 'services:visa' %}">Visa Services</a></li>
+            <li><a href="{% url 'services:passport' %}">Passport Services</a></li>
+            <li><a href="{% url 'services:consular_assistance' %}">Consular Assistance</a></li>
+            <li><a href="{% url 'services:trade_investment' %}">Trade & Investment</a></li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions, please <a href="{% url 'contact' %}">contact us</a>.</p>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "welcome": "Welcome to the Embassy of Mozambique in France",
+  "about_us": {
+    "title": "About Us",
+    "description": "Learn more about our mission, vision, and the services we provide."
+  },
+  "services": {
+    "title": "Our Services",
+    "visa_services": "Visa Services",
+    "passport_services": "Passport Services",
+    "consular_assistance": "Consular Assistance",
+    "trade_investment": "Trade & Investment"
+  },
+  "appointments": {
+    "title": "Book an Appointment",
+    "instructions": "Please select a service and choose a suitable time slot."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  },
+  "emergency_services": {
+    "title": "Emergency Services",
+    "description": "For emergencies, please contact us at any time."
+  },
+  "footer": {
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  }
+}

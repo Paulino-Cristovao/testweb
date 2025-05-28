@@ -1,0 +1,164 @@
+/* Embassy of Mozambique Website Styles */
+
+:root {
+    --moz-green: #009639;
+    --moz-red: #DC143C;
+    --moz-yellow: #FFD700;
+    --moz-black: #000000;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #007A33; /* Mozambican flag green */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, var(--moz-green) 0%, var(--moz-red) 100%);
+    padding: 2rem 1rem;
+}
+
+.jumbotron h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background: #FFB800; /* Mozambican flag yellow */
+    padding: 10px;
+}
+
+nav a {
+    color: #007A33; /* Mozambican flag green */
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background: #005B26; /* Darker green for hover effect */
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    background: #007A33; /* Mozambican flag green */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--moz-green);
+    border-color: var(--moz-green);
+}
+
+.btn-primary:hover {
+    background-color: #007a2e;
+    border-color: #007a2e;
+}
+
+.btn:hover {
+    background: #005B26; /* Darker green for hover effect */
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: var(--moz-green);
+    color: #155724;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Chat widget styles */
+.chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-button {
+    background-color: var(--moz-green);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.chat-button:hover {
+    background-color: #007a2e;
+    transform: scale(1.1);
+}
+
+/* Form styles */
+.form-control:focus {
+    border-color: var(--moz-green);
+    box-shadow: 0 0 0 0.2rem rgba(0, 150, 57, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+}
